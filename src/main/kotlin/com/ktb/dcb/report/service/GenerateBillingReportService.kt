@@ -1,6 +1,6 @@
 package com.ktb.dcb.report.service
 
-import com.ktb.dcb.report.model.request.BillingStatement
+import com.ktb.dcb.report.model.request.BillingReport
 import com.ktb.dcb.report.model.request.BillingTransaction
 import com.ktb.dcb.report.model.request.CashAndLoanTransaction
 import com.ktb.dcb.report.model.request.PreviousTransaction
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class GenerateBillingReportService {
-        fun exec(billingStatement: BillingStatement): ResponseEntity<ByteArray> {
+        fun exec(billingStatement: BillingReport): ResponseEntity<ByteArray> {
                 val jasperStream =
                         this::class.java.getResourceAsStream("/reports/billing_template.jasper")
                                 ?: throw IllegalArgumentException(

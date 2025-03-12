@@ -2,7 +2,7 @@ package com.ktb.dcb.report.controller.rest
 
 import org.springframework.web.bind.annotation.*
 import com.ktb.dcb.report.service.GenerateBillingReportService
-import com.ktb.dcb.report.model.request.BillingStatement
+import com.ktb.dcb.report.model.request.BillingReport
 import org.springframework.http.ResponseEntity
 
 @RestController
@@ -12,7 +12,7 @@ class BillingController(
 ) {
 
     @PostMapping("/billing")
-    fun generateReport(@RequestBody req: BillingStatement): ResponseEntity<ByteArray> {
+    fun generateReport(@RequestBody req: BillingReport): ResponseEntity<ByteArray> {
         return generateReportService.exec(req)
     }
 

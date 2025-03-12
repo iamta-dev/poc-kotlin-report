@@ -1,6 +1,6 @@
 package com.ktb.dcb.report.model.request
 
-data class BillingStatement(
+data class BillingReport(
     val billingStatementReferenceNumber: String,    // 1
     val documentType: Int,                          // 2
     val documentFormat: Int,                        // 3
