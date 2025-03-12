@@ -1,4 +1,4 @@
-<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
 <jasperReport name="receipt_template" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5b482d7c-ffef-456d-a480-a3c94274d449">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="receipt.jrdax"/>
 	<query language="json"><![CDATA[]]></query>
@@ -90,15 +90,7 @@
 	<background splitType="Stretch"/>
 	<pageHeader height="63">
 		<element kind="image" uuid="9aa2605d-d749-4cce-877c-4380c39ff23c" x="-20" y="0" width="269" height="63" hImageAlign="Center">
-			<expression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($F{logo}.getBytes()))]]></expression>
-			<property name="com.jaspersoft.studio.unit.width" value="px"/>
-			<property name="com.jaspersoft.studio.unit.height" value="px"/>
-			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
-				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-			</box>
+			<expression><![CDATA["./images/logo.png"]]></expression>
 		</element>
 		<element kind="staticText" uuid="b3353769-9687-4737-a7c7-6fad63981829" x="250" y="0" width="106" height="20" forecolor="#FF0C08" fontName="TH Sarabun New" fontSize="11.0" hTextAlign="Right" vTextAlign="Top">
 			<paragraph lineSpacing="1_1_2" lineSpacingSize="1.5"/>

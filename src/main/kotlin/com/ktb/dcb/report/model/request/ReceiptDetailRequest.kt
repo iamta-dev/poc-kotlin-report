@@ -76,5 +76,4 @@ class ReceiptReport(
 
         /** The total repayment amount that has been repaid and allocated as of repayment EOD. */
         val totalRepaymentAmount: BigDecimal,
-        var logo: String? = null,
 )
