@@ -86,7 +86,6 @@
 		<description><![CDATA[totalRepaymentAmount]]></description>
 		<property name="net.sf.jasperreports.json.field.expression" value="totalRepaymentAmount"/>
 	</field>
-	<field name="logo" class="java.lang.String"/>
 	<background splitType="Stretch"/>
 	<pageHeader height="63">
 		<element kind="image" uuid="9aa2605d-d749-4cce-877c-4380c39ff23c" x="-20" y="0" width="269" height="63" hImageAlign="Center">
