@@ -48,6 +48,10 @@ dependencies {
     implementation("org.apache.avro:avro-ipc:1.11.3")
     implementation("com.github.avro-kotlin.avro4k:avro4k-core:2.1.1")
     implementation("software.amazon.awssdk:s3:2.20.0")
+    
+    // Swagger OpenAPI
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.4.0")
+    implementation("org.springdoc:springdoc-openapi-starter-common:2.4.0")
 
 }
 

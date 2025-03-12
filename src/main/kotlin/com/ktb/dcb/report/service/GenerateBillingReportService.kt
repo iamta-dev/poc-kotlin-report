@@ -12,18 +12,30 @@ import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
 
+/**
+ * Service สำหรับสร้าง Billing Report ในรูปแบบ PDF
+ */
 @Service
 class GenerateBillingReportService {
+        /**
+         * สร้าง Billing Report จากข้อมูลที่ได้รับ
+         * 
+         * @param billingStatement ข้อมูลสำหรับสร้าง Billing Report
+         * @return ResponseEntity ที่มี PDF เป็น body
+         */
         fun exec(billingStatement: BillingReport): ResponseEntity<ByteArray> {
+                // โหลด template จาก resources
                 val jasperStream =
                         this::class.java.getResourceAsStream("/reports/billing_template.jasper")
                                 ?: throw IllegalArgumentException(
-                                        "billing_template template not found"
+                                        "Billing template not found"
                                 )
 
+                // สร้าง data source จากข้อมูลที่ได้รับ
                 val dataSource = JRBeanCollectionDataSource(listOf(billingStatement))
                 val parameters = mutableMapOf<String, Any>()
 
+                // สร้าง data source สำหรับตารางต่างๆ
                 val tablePreviousTransaction =
                         JRBeanCollectionDataSource(billingStatement.previousTransactions)
                 val tablePreviousTransactionSummary =
@@ -124,20 +136,21 @@ class GenerateBillingReportService {
                                 )
                         )
 
-                parameters.put("TablePreviousTransaction", tablePreviousTransaction)
-                parameters.put("TablePreviousTransactionSummary", tablePreviousTransactionSummary)
-                parameters.put("TableCashAndLoanTransaction", tableCashAndLoanTransaction)
-                parameters.put(
-                        "TableCashAndLoanTransactionSummary",
-                        tableCashAndLoanTransactionSummary
-                )
-                parameters.put("TableBillingTransaction", tableBillingTransaction)
-                parameters.put("TableBillingTransactionSummary", tableBillingTransactionSummary)
+                // เพิ่ม parameters สำหรับ JasperReports
+                parameters["TablePreviousTransaction"] = tablePreviousTransaction
+                parameters["TablePreviousTransactionSummary"] = tablePreviousTransactionSummary
+                parameters["TableCashAndLoanTransaction"] = tableCashAndLoanTransaction
+                parameters["TableCashAndLoanTransactionSummary"] = tableCashAndLoanTransactionSummary
+                parameters["TableBillingTransaction"] = tableBillingTransaction
+                parameters["TableBillingTransactionSummary"] = tableBillingTransactionSummary
 
+                // สร้าง JasperPrint จาก template และ data source
                 val jasperPrint = JasperFillManager.fillReport(jasperStream, parameters, dataSource)
 
+                // แปลง JasperPrint เป็น PDF
                 val pdfBytes: ByteArray = JasperExportManager.exportReportToPdf(jasperPrint)
 
+                // สร้าง ResponseEntity ที่มี PDF เป็น body
                 return ResponseEntity.ok()
                         .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=billing.pdf")
                         .contentType(MediaType.APPLICATION_PDF)

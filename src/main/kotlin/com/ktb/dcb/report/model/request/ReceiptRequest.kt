@@ -1,79 +1,154 @@
 package com.ktb.dcb.report.model.request
 
+import io.swagger.v3.oas.annotations.media.Schema
 import java.math.BigDecimal
 
-class ReceiptReport(
+@Schema(description = "ข้อมูลสำหรับสร้าง Receipt Report")
+data class ReceiptReport(
 
         // 1) Transaction info
-        /**
-         * The date that transaction has been posted. Format: DD/MM/YYYY (Buddhist era). Example:
-         * "25/01/2568"
-         */
+        @Schema(
+                description = "วันที่ทำรายการ (รูปแบบ: DD/MM/YYYY พุทธศักราช)",
+                example = "25/01/2568"
+        )
         val transactionDate: String,
 
-        /**
-         * Receipt number (pending discussion with accounting team). Could be null if not yet
-         * assigned at the time of this request.
-         */
+        @Schema(
+                description = "เลขที่ใบเสร็จ (อาจเป็น null หากยังไม่ได้กำหนด ณ เวลาที่ส่งคำขอนี้)",
+                example = "REC123456789",
+                nullable = true
+        )
         val receiptNumber: String? = null,
 
-        /**
-         * From account name. If a different person repays on behalf of the debtor, this will show
-         * that person's saving account name.
-         */
+        @Schema(
+                description = "ชื่อบัญชีต้นทาง หากมีบุคคลอื่นชำระหนี้แทนลูกหนี้ จะแสดงชื่อบัญชีเงินฝากของบุคคลนั้น",
+                example = "นายสมชาย ใจดี"
+        )
         val fromAccountName: String,
 
-        /**
-         * Customer Tax ID or Customer ID (not masked). Source: retrieved from design team /
-         * back-end system.
-         */
+        @Schema(
+                description = "เลขประจำตัวผู้เสียภาษีของลูกค้าหรือรหัสลูกค้า (ไม่ปิดบัง)",
+                example = "1234567890123"
+        )
         val customerTaxId: String,
 
-        /** Customer address as stored in CDI at the time of loan origination. */
+        @Schema(
+                description = "ที่อยู่ของลูกค้าตามที่เก็บไว้ใน CDI ณ เวลาที่เริ่มสินเชื่อ",
+                example = "123 ถนนสุขุมวิท แขวงคลองเตย เขตคลองเตย กรุงเทพฯ 10110"
+        )
         val customerAddress: String,
 
-        /** Customer email as stored in CDI at the time of loan origination. */
+        @Schema(
+                description = "อีเมลของลูกค้าตามที่เก็บไว้ใน CDI ณ เวลาที่เริ่มสินเชื่อ",
+                example = "somchai@example.com"
+        )
         val customerEmail: String,
 
-        /** Company address (pending requirement—may be null or empty if not required). */
+        @Schema(
+                description = "ที่อยู่บริษัท (อาจเป็น null หรือว่างเปล่าหากไม่จำเป็น)",
+                example = "789 ถนนสีลม แขวงสีลม เขตบางรัก กรุงเทพฯ 10500",
+                nullable = true
+        )
         val companyAddress: String? = null,
 
-        /** Company Tax ID (pending requirement—may be null or empty if not required). */
+        @Schema(
+                description = "เลขประจำตัวผู้เสียภาษีของบริษัท (อาจเป็น null หรือว่างเปล่าหากไม่จำเป็น)",
+                example = "0107536000064",
+                nullable = true
+        )
         val companyTaxId: String? = null,
 
         // 2) LOC (Line of Credit) / Product info
-        /** Customer’s Jai Paa LOC account number. */
+        @Schema(
+                description = "หมายเลขบัญชีสินเชื่อ Jai Paa ของลูกค้า",
+                example = "LOC1234567890"
+        )
         val locAccountNumber: String,
 
-        /**
-         * Payment channel (example can be DDR, Branch, etc.). In the case of DDR, you may also
-         * store the masked saving account number (XXX-****-XXX). In the case of Branch, you might
-         * store branch name or "CASH".
-         */
+        @Schema(
+                description = "ช่องทางการชำระเงิน (เช่น DDR, Branch) ในกรณีของ DDR อาจเก็บหมายเลขบัญชีเงินฝากที่ปิดบังบางส่วน (XXX-****-XXX) ในกรณีของ Branch อาจเก็บชื่อสาขาหรือ \"CASH\"",
+                example = "DDR: XXX-****-123"
+        )
         val paymentChannel: String,
 
-        /** Market code (e.g., "JAI_PAA"), product name, or other relevant descriptor. */
+        @Schema(
+                description = "รหัสตลาด (เช่น \"JAI_PAA\") หรือตัวระบุที่เกี่ยวข้องอื่นๆ",
+                example = "JAI_PAA"
+        )
         val marketCode: String,
+        
+        @Schema(
+                description = "ชื่อผลิตภัณฑ์",
+                example = "สินเชื่อใจป้า"
+        )
         val productName: String,
 
-        /** Language preference, e.g., "TH", "EN". */
+        @Schema(
+                description = "ภาษาที่ต้องการ เช่น \"TH\", \"EN\"",
+                example = "TH",
+                nullable = true
+        )
         val language: String? = "TH",
 
-        /** Interest rate for Jai Paa (at LOC level). */
+        @Schema(
+                description = "อัตราดอกเบี้ยสำหรับสินเชื่อใจป้า (ระดับ LOC)",
+                example = "15.00"
+        )
         val interestRate: BigDecimal,
 
         // 3) Outstanding balances (as of repayment EOD)
+        @Schema(
+                description = "ยอดคงค้างเงินต้น (ณ สิ้นวันที่ชำระเงิน)",
+                example = "50000.00"
+        )
         val outstandingPrincipal: BigDecimal,
+        
+        @Schema(
+                description = "ยอดคงค้างดอกเบี้ย (ณ สิ้นวันที่ชำระเงิน)",
+                example = "2500.00"
+        )
         val outstandingInterest: BigDecimal,
+        
+        @Schema(
+                description = "ยอดคงค้างดอกเบี้ยผิดนัด (ณ สิ้นวันที่ชำระเงิน)",
+                example = "0.00"
+        )
         val outstandingPenaltyInterest: BigDecimal,
+        
+        @Schema(
+                description = "ยอดคงค้างค่าธรรมเนียม (ณ สิ้นวันที่ชำระเงิน)",
+                example = "0.00"
+        )
         val outstandingFee: BigDecimal,
 
         // 4) Repaid/allocated amounts (as of repayment EOD)
+        @Schema(
+                description = "เงินต้นที่ชำระแล้ว (ณ สิ้นวันที่ชำระเงิน)",
+                example = "5000.00"
+        )
         val repaidPrincipal: BigDecimal,
+        
+        @Schema(
+                description = "ดอกเบี้ยที่ชำระแล้ว (ณ สิ้นวันที่ชำระเงิน)",
+                example = "500.00"
+        )
         val repaidInterest: BigDecimal,
+        
+        @Schema(
+                description = "ดอกเบี้ยผิดนัดที่ชำระแล้ว (ณ สิ้นวันที่ชำระเงิน)",
+                example = "0.00"
+        )
         val repaidPenaltyInterest: BigDecimal,
+        
+        @Schema(
+                description = "ค่าธรรมเนียมที่ชำระแล้ว (ณ สิ้นวันที่ชำระเงิน)",
+                example = "0.00"
+        )
         val repaidFee: BigDecimal,
 
-        /** The total repayment amount that has been repaid and allocated as of repayment EOD. */
+        @Schema(
+                description = "ยอดรวมการชำระเงินที่ได้ชำระและจัดสรรแล้ว ณ สิ้นวันที่ชำระเงิน",
+                example = "5500.00"
+        )
         val totalRepaymentAmount: BigDecimal,
 )
