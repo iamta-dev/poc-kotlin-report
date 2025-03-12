@@ -1,0 +1,1211 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="billing_template" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="51fec714-b17a-4e6f-b571-ad2f4ba33f55">
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#9CA3AF"/>
+			<bottomPen lineWidth="0.5" lineColor="#9CA3AF"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#9CA3AF"/>
+			<bottomPen lineWidth="0.5" lineColor="#9CA3AF"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#F2F2F2">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#9CA3AF"/>
+			<bottomPen lineWidth="0.5" lineColor="#9CA3AF"/>
+		</box>
+		<conditionalStyle backcolor="#FBFDFF">
+			<conditionExpression><![CDATA[($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+		</conditionalStyle>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<bottomPen lineWidth="0.5" lineColor="#34BEF2"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<bottomPen lineWidth="0.5" lineColor="#34BEF2"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#DAEEF3">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<bottomPen lineWidth="0.5" lineColor="#34BEF2"/>
+		</box>
+		<conditionalStyle backcolor="#FBFDFF">
+			<conditionExpression><![CDATA[($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+		</conditionalStyle>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#34BEF2"/>
+			<topPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<leftPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<bottomPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<rightPen lineWidth="0.5" lineColor="#34BEF2"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#34BEF2"/>
+			<topPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<leftPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<bottomPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<rightPen lineWidth="0.5" lineColor="#34BEF2"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#DAEEF3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#34BEF2"/>
+			<topPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<leftPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<bottomPen lineWidth="0.5" lineColor="#34BEF2"/>
+			<rightPen lineWidth="0.5" lineColor="#34BEF2"/>
+		</box>
+		<conditionalStyle backcolor="#FBFDFF">
+			<conditionExpression><![CDATA[($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+		</conditionalStyle>
+	</style>
+	<style name="Table 3_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle backcolor="#DAEEF3">
+			<conditionExpression><![CDATA[($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+		</conditionalStyle>
+	</style>
+	<dataset name="TablePreviousTransactionDataSet" uuid="717cfd5f-e377-4e1b-833a-4c1381062c87">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BeanDataAdapter"/>
+		<query language="sql"><![CDATA[]]></query>
+		<field name="transactionDate" class="java.lang.String"/>
+		<field name="postingDate" class="java.lang.String"/>
+		<field name="description" class="java.lang.String"/>
+		<field name="amount" class="java.lang.String"/>
+		<field name="note" class="java.lang.String"/>
+		<variable name="Variable_1" class="java.lang.String"/>
+	</dataset>
+	<dataset name="TableCashAndLoanTransactionDataSet" uuid="8ded3a90-24ec-43a0-8e5f-7a324d9253b3">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BeanDataAdapter"/>
+		<query language="sql"><![CDATA[]]></query>
+		<field name="transactionDate" class="java.lang.String"/>
+		<field name="postingDate" class="java.lang.String"/>
+		<field name="description" class="java.lang.String"/>
+		<field name="refId" class="java.lang.String"/>
+		<field name="amount" class="java.lang.String"/>
+	</dataset>
+	<dataset name="Empty Dataset1" uuid="6fada33c-58f3-478d-8625-a806c7b028c9"/>
+	<dataset name="TableBillingTransactionDataSet" uuid="0b39b253-2cea-4d43-af4f-7eee6192368e">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BeanDataAdapter"/>
+		<query language="sql"><![CDATA[]]></query>
+		<field name="transactionDate" class="java.lang.String"/>
+		<field name="postingDate" class="java.lang.String"/>
+		<field name="description" class="java.lang.String"/>
+		<field name="refId" class="java.lang.String"/>
+		<field name="drawdownInstallmentBilled" class="java.lang.String"/>
+		<field name="amount" class="java.lang.String"/>
+	</dataset>
+	<dataset name="TablePreviousTransactionSummaryDataSet" uuid="f04e060e-76cf-47f5-9a96-5cc199f65a60">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BeanDataAdapter"/>
+		<query language="sql"><![CDATA[]]></query>
+		<field name="description" class="java.lang.String"/>
+		<field name="amount" class="java.lang.String"/>
+		<field name="note" class="java.lang.String"/>
+	</dataset>
+	<dataset name="TableCashAndLoanTransactionSummaryDataSet" uuid="1b6ee558-0b7b-4e7d-ac53-08b574bca303">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BeanDataAdapter"/>
+		<query language="sql"><![CDATA[]]></query>
+		<field name="description" class="java.lang.String"/>
+		<field name="amount" class="java.lang.String"/>
+	</dataset>
+	<dataset name="TableBillingTransactionSummaryDataSet" uuid="220f15c3-3129-4c70-b245-7533e499ec69">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BeanDataAdapter"/>
+		<query language="sql"><![CDATA[]]></query>
+		<field name="description" class="java.lang.String"/>
+		<field name="amount" class="java.lang.String"/>
+	</dataset>
+	<parameter name="TablePreviousTransaction" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="TableCashAndLoanTransaction" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="TableBillingTransaction" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="TablePreviousTransactionSummary" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="TableCashAndLoanTransactionSummary" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="TableBillingTransactionSummary" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="billingStatementReferenceNumber" class="java.lang.String"/>
+	<field name="documentType" class="java.lang.Integer"/>
+	<field name="documentFormat" class="java.lang.Integer"/>
+	<field name="generationDate" class="java.lang.String"/>
+	<field name="customerFullName" class="java.lang.String"/>
+	<field name="customerAddress" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="accountNumber" class="java.lang.String"/>
+	<field name="cutOffDate" class="java.lang.String"/>
+	<field name="dueDate" class="java.lang.String"/>
+	<field name="creditLine" class="java.lang.Double"/>
+	<field name="ledgerBalance" class="java.lang.Double"/>
+	<field name="availableCreditLimit" class="java.lang.Double"/>
+	<field name="totalPaymentDue" class="java.lang.Double"/>
+	<field name="totalRepayment" class="java.lang.Double"/>
+	<field name="outstandingBalanceCarriedForward" class="java.lang.Double"/>
+	<field name="totalAmountOfDrawdownTransaction" class="java.lang.Double"/>
+	<field name="totalMonthlyInstallment" class="java.lang.Double"/>
+	<field name="collectionFee" class="java.lang.Double"/>
+	<field name="lateChargePenalty" class="java.lang.Double"/>
+	<field name="fee" class="java.lang.Double"/>
+	<field name="casaAccountNumber" class="java.lang.String"/>
+	<field name="cifNumber" class="java.lang.String"/>
+	<field name="transactionSequenceNumber" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="376" splitType="Stretch">
+		<element kind="image" uuid="ee3f906c-7800-4180-ab19-f3d5167b19fe" x="479" y="0" width="76" height="30">
+			<expression><![CDATA["./images/RGB_Logo-Eng-Thai-Horizon.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="5634c718-2b54-4cfd-b1c5-3c79f056b84f" x="309" y="34" width="246" height="16" forecolor="#0A91B1" fontName="TH Sarabun New" bold="true" hTextAlign="Right">
+			<text><![CDATA[35 ถนนสุขุมวิท แขวงคลองเตยเหนือ เขตวัฒนา กรุงเทพฯ 10110]]></text>
+		</element>
+		<element kind="staticText" uuid="1d3cf7f7-a34b-4d24-9ded-1374b52e4529" x="309" y="50" width="246" height="16" forecolor="#0A91B1" fontName="TH Sarabun New" bold="true" hTextAlign="Right">
+			<text><![CDATA[เลขที่ทะเบียนนิติบุคคล/เลขประจำตัวผู้เสียภาษี 0107537000880]]></text>
+		</element>
+		<element kind="staticText" uuid="e6491906-d925-473a-925b-00cf80b8e602" x="35" y="20" width="45" height="16" fontName="TH Sarabun New" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[ใบเสร็จเลขที่:]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="9017861a-b4bf-4731-95fc-848a205b0b6e" x="35" y="37" width="45" height="16" fontName="TH Sarabun New" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[วันที่:]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="06bfac0e-53f1-459c-809d-3a5f2fa93ad4" x="35" y="123" width="25" height="16" forecolor="#0A91B1" fontName="TH Sarabun New" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[E-Mail: ]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="fe6c378d-bebd-4f1b-a8bc-cdb169bd3c7d" key="" mode="Opaque" x="289" y="99" width="120" height="15" forecolor="#FFFFFF" backcolor="#3191B2"/>
+		<element kind="rectangle" uuid="1212488f-e2c7-4442-85c0-39674767e0ec" x="409" y="99" width="110" height="15" forecolor="#FFFFFF" backcolor="#B6DDE7"/>
+		<element kind="staticText" uuid="ba88cc5b-b583-4a3b-a3ef-ea2c85599cba" x="289" y="99" width="120" height="15" forecolor="#FFFFFF" backcolor="#FFFFFF" fontName="TH Sarabun New" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<text><![CDATA[เลขที่บัญชีสินเชื่อ]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="49fff0d4-a60c-41a1-b5c5-ca52c54344d4" x="292" y="70" width="175" height="23" fontName="TH Sarabun New" fontSize="14.0" bold="true" italic="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[ใบแจ้งยอดชำระเงินบัญชีสินเชื่อหมุนเวียน]]></text>
+		</element>
+		<element kind="rectangle" uuid="d462a8a8-05a5-4976-b6cc-081d5a17044a" x="400" y="152" width="120" height="21" forecolor="#3191B2" backcolor="#3191B2"/>
+		<element kind="staticText" uuid="ba47352f-e6e6-4927-8762-5f39baf5eea5" x="400" y="152" width="120" height="21" forecolor="#FFFFFF" fontName="TH Sarabun New" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[จำนวนเงินที่ต้องชำระ]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="027ce26c-7ac8-42a0-a0fd-c20dbe2c33d4" x="280" y="152" width="120" height="21" forecolor="#3191B2" backcolor="#3191B2"/>
+		<element kind="staticText" uuid="28fbdd9a-839d-41be-b5af-71449fe5dfa2" x="280" y="152" width="120" height="21" forecolor="#FFFFFF" fontName="TH Sarabun New" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[วงเงินคงเหลือ]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="ee3cb072-e656-4931-9e62-2ee79488d3e4" x="160" y="152" width="120" height="21" forecolor="#3191B2" backcolor="#3191B2"/>
+		<element kind="staticText" uuid="b28c3429-7a0e-43bb-ad54-a87751106412" x="160" y="152" width="120" height="21" forecolor="#FFFFFF" fontName="TH Sarabun New" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[วงเงินที่ใช้ไป]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="cc11ee3c-1d4b-4ff4-ba75-c80401381777" x="40" y="152" width="120" height="21" forecolor="#3191B2" backcolor="#3191B2">
+			<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+		</element>
+		<element kind="staticText" uuid="8b63b858-14dd-4f35-9708-25f3df44619a" x="40" y="152" width="120" height="21" forecolor="#FFFFFF" fontName="TH Sarabun New" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[วงเงินสินเชื่อ]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="8035a7c3-1f53-4cd9-b41a-ca6d81e314c7" x="40" y="173" width="120" height="21" forecolor="#B6DDE7" backcolor="#B6DDE7">
+			<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+			<pen lineColor="#34BEF2"/>
+		</element>
+		<element kind="rectangle" uuid="bb60605a-5277-45f7-9b7c-6d49470f177f" x="160" y="173" width="120" height="21" forecolor="#B6DDE7" backcolor="#B6DDE7">
+			<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+			<pen lineColor="#34BEF2"/>
+		</element>
+		<element kind="rectangle" uuid="9d437be5-ae43-400b-af81-a98bf1438904" x="280" y="173" width="120" height="21" forecolor="#B6DDE7" backcolor="#B6DDE7">
+			<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+			<pen lineColor="#34BEF2"/>
+		</element>
+		<element kind="rectangle" uuid="ae28c25d-53d4-4b5b-80f5-fc78c099a499" x="400" y="173" width="120" height="21" forecolor="#B6DDE7" backcolor="#B6DDE7">
+			<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+			<pen lineColor="#34BEF2"/>
+		</element>
+		<element kind="staticText" uuid="685ca88c-53b3-4fdb-800a-7169473c4569" x="40" y="202" width="480" height="40" fontName="TH Sarabun New" fontSize="12.0" bold="true">
+			<text><![CDATA[            บัญชีสินเชื่อนี้ ชำระโดยวิธีหักบัญชีอัตโนมัติ (Auto-Payment) บัญชีออมทรัพย์เลขที่                      โปรดตรวจสอบยอดเงินในบัญชีให้ เพียงพอตามใบแจ้งชำระเงิน หรือ นำเงินเข้าบัญชีให้เพียงพอ เพื่อหักชำระหนี้ก่อนวันครบกำหนดชำระ]]></text>
+		</element>
+		<element kind="staticText" uuid="58d6138b-76ca-4ea3-8ff1-ed6bd56ea8bb" stretchType="NoStretch" x="40" y="252" width="30" height="20" fontName="TH Sarabun New" bold="true">
+			<text><![CDATA[หมายเหตุ:]]></text>
+		</element>
+		<element kind="staticText" uuid="676a03f6-e3c8-44d7-b3c9-83f2052b405b" x="60" y="272" width="290" height="30" markup="none" fontName="TH Sarabun New" fontSize="10.0" bold="true">
+			<text><![CDATA[หากชำระไม่ตรงตามกำหนด หรือชำระไม่ครบถ้วนของยอดเรียกเก็บ อาจมีค่าติดตามทวงถามและ ระยะเวลาเรียกเก็บจากเบี้ยผิดนัด และค่าธรรมเนียมอื่น ๆ (ถ้ามี)]]></text>
+		</element>
+		<element kind="image" uuid="13bdfa15-b235-497f-bc23-2b1a5ca25afb" x="451" y="289" width="50" height="50">
+			<expression><![CDATA["./images/qr.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="5d03c768-715c-4870-89b5-ed8c3567afca" x="381" y="294" width="70" height="40" fontName="TH Sarabun New" fontSize="10.0" bold="true">
+			<text><![CDATA[สแกนดูตัวอย่างวิธีการ
+คำนวณดอกเบี้ยและ
+ค่าธรรมเนียม]]></text>
+		</element>
+		<element kind="rectangle" uuid="7e9f2bfb-1c4d-4c1b-9efe-87714ecad77c" x="371" y="292" width="5" height="41" forecolor="#809FC5" backcolor="#809FC5"/>
+		<element kind="staticText" uuid="73174ae9-deb9-4d7a-9ec7-6311ac6ea58f" x="60" y="302" width="290" height="30" markup="none" fontName="TH Sarabun New" fontSize="10.0" bold="true">
+			<text><![CDATA[หากลูกค้าชำระเงินมากกว่าคางวดที่เรียกเก็บธนาคารจะนำไปตัดชำระเงินต้นคงเหลือให้ เฉพาะกรณีที่มีสถานะปกติ ไม่ยอดค้างชำระจากรอบ บิลก่อนหน้า]]></text>
+		</element>
+		<element kind="staticText" uuid="50282d6a-d1ba-424b-99a5-cca881772019" x="60" y="332" width="290" height="30" markup="none" fontName="TH Sarabun New" fontSize="10.0" bold="true">
+			<text><![CDATA[สำหรับรายการสินเชื่อที่ได้รับอัตราดอกเบี้ยพิเศษ ในกรณีที่ผู้กู้ไม่ชำระค่างวด หรือชำระไม่ครบถ้วน ตรงตามกำหนดอัตราดอกเบี้ยของจะมี การเปลี่ยนกลับเป็น "อัตราดอกเบี้ยปกติ" ดังนั้น เพื่อหลีกเลี่ยงการเปลี่ยนแปลงสิทธิประโยชน์ดังกล่าว กรุณาชำระเงินให้ครบถ้วนตรงตาม กำหนด]]></text>
+		</element>
+		<element kind="ellipse" uuid="752f2815-e392-4f41-8927-7d3fcd01cb5b" positionType="Float" stretchType="NoStretch" x="55" y="277" width="1" height="2" backcolor="#000000"/>
+		<element kind="ellipse" uuid="bf6d45d9-a19a-4c7d-8437-9ef4be1206a5" positionType="Float" stretchType="NoStretch" x="55" y="307" width="1" height="2" backcolor="#000000"/>
+		<element kind="ellipse" uuid="bd91d8ec-54f1-4c5f-bf6c-4846e3ff164b" positionType="Float" stretchType="NoStretch" x="55" y="337" width="1" height="2" backcolor="#000000"/>
+		<element kind="textField" uuid="37c6707e-ad0c-46c7-95df-af4e21473533" x="80" y="20" width="160" height="16" fontName="TH Sarabun New" vTextAlign="Middle">
+			<expression><![CDATA[$F{billingStatementReferenceNumber}]]></expression>
+		</element>
+		<element kind="textField" uuid="d6eae0b2-543f-493e-8214-a6e4280314f6" x="80" y="37" width="160" height="16" fontName="TH Sarabun New" vTextAlign="Middle">
+			<expression><![CDATA[$F{generationDate}]]></expression>
+		</element>
+		<element kind="textField" uuid="502168e8-d64f-4b70-9f9e-5f9d4670954f" x="35" y="91" width="240" height="16" forecolor="#0A91B1" fontName="TH Sarabun New" bold="true" vTextAlign="Middle">
+			<expression><![CDATA[$F{customerFullName}]]></expression>
+		</element>
+		<element kind="textField" uuid="ec6ff63e-6995-4424-a7cb-038b75f03ee0" x="35" y="107" width="240" height="16" forecolor="#0A91B1" fontName="TH Sarabun New" bold="true" vTextAlign="Middle">
+			<expression><![CDATA[$F{customerAddress}]]></expression>
+		</element>
+		<element kind="textField" uuid="ea7be388-e5b3-4826-abd8-7c21938308ce" x="60" y="123" width="215" height="16" forecolor="#0A91B1" fontName="TH Sarabun New" bold="true" vTextAlign="Middle">
+			<expression><![CDATA[$F{email}]]></expression>
+		</element>
+		<element kind="textField" uuid="23b0b4cc-e7f4-46a4-a1e5-a79d78b1c2c5" x="409" y="99" width="110" height="15" forecolor="#000000" fontName="TH Sarabun New" bold="false" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<expression><![CDATA[$F{accountNumber}]]></expression>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="f4d93470-51eb-4bc4-abc6-66e748f452f1" key="" mode="Opaque" x="289" y="114" width="120" height="15" forecolor="#FFFFFF" backcolor="#3191B2"/>
+		<element kind="rectangle" uuid="9379cedd-656f-4575-a108-baa07c30159c" x="409" y="114" width="110" height="15" forecolor="#FFFFFF" backcolor="#B6DDE7"/>
+		<element kind="staticText" uuid="c00995a4-73fe-48fc-b07f-bcb3f3adedbe" x="289" y="114" width="120" height="15" forecolor="#FFFFFF" backcolor="#FFFFFF" fontName="TH Sarabun New" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<text><![CDATA[วันที่สรุปยอด]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="textField" uuid="810f1462-24c5-40a0-b6ac-035cf8a16abb" x="409" y="114" width="110" height="15" forecolor="#000000" fontName="TH Sarabun New" bold="false" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<expression><![CDATA[$F{cutOffDate}]]></expression>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="517076ed-79e4-4e42-9a04-20161b88e83b" key="" mode="Opaque" x="289" y="129" width="120" height="15" forecolor="#FFFFFF" backcolor="#3191B2"/>
+		<element kind="rectangle" uuid="23826978-22ad-4412-8665-687403d86b4f" x="409" y="129" width="110" height="15" forecolor="#FFFFFF" backcolor="#B6DDE7"/>
+		<element kind="staticText" uuid="7aaa9fdb-8cad-496d-8914-7e620af99fd7" x="289" y="129" width="120" height="15" forecolor="#FFFFFF" backcolor="#FFFFFF" fontName="TH Sarabun New" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<text><![CDATA[วันที่ครบกำหนดชำระ]]></text>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="textField" uuid="d3861527-e941-4f35-b091-7443c73dec43" x="409" y="129" width="110" height="15" forecolor="#000000" fontName="TH Sarabun New" bold="false" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<expression><![CDATA[$F{dueDate}]]></expression>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+		</element>
+		<element kind="textField" uuid="3d3823bd-1b40-458e-92a3-233ba4afde6f" x="40" y="173" width="120" height="21" forecolor="#000000" fontName="TH Sarabun New" bold="false" hTextAlign="Center" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<expression><![CDATA[$F{creditLine}]]></expression>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+		</element>
+		<element kind="textField" uuid="56be910e-1f77-48be-9009-1e033c049a78" x="160" y="173" width="120" height="21" forecolor="#000000" fontName="TH Sarabun New" bold="false" hTextAlign="Center" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<expression><![CDATA[$F{ledgerBalance}]]></expression>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+		</element>
+		<element kind="textField" uuid="dfcbe103-d678-40f1-92ff-159fafe99660" x="280" y="173" width="120" height="21" forecolor="#000000" fontName="TH Sarabun New" bold="false" hTextAlign="Center" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<expression><![CDATA[$F{availableCreditLimit}]]></expression>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+		</element>
+		<element kind="textField" uuid="2655b0c5-14ea-4119-ab40-05a328802564" x="400" y="173" width="120" height="21" forecolor="#000000" fontName="TH Sarabun New" bold="false" hTextAlign="Center" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<expression><![CDATA[$F{totalPaymentDue}]]></expression>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+		</element>
+		<element kind="textField" uuid="1307276d-03ea-4c2c-8251-54446c3ce9b6" x="347" y="202" width="61" height="15" forecolor="#000000" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<paragraph leftIndent="5"/>
+			<expression><![CDATA[$F{accountNumber}]]></expression>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+		</element>
+		<property name="com.jaspersoft.studio.layout"/>
+	</title>
+	<detail>
+		<band height="59" splitType="Stretch">
+			<element kind="staticText" uuid="baf9e314-0f58-4780-944b-c476a6ea5347" x="40" y="0" width="289" height="22" fontName="TH Sarabun New" fontSize="14.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[ประวัติรายการเรียกเก็บเงินและการชำระเงินของรอบบิลก่อนหน้า]]></text>
+			</element>
+			<element kind="component" uuid="4f1b08c9-0a0c-4f23-b911-af2eff4597b4" x="40" y="24" width="480" height="35">
+				<component kind="table">
+					<datasetRun uuid="ff36febe-969d-4b7e-b757-77d3596c0fc6" subDataset="TablePreviousTransactionDataSet">
+						<dataSourceExpression><![CDATA[$P{TablePreviousTransaction}]]></dataSourceExpression>
+					</datasetRun>
+					<column kind="single" uuid="75e2f2fb-24e8-40ff-9eca-6ebbb9e62374" width="70">
+						<columnHeader height="20" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="76b535cf-79de-42b1-b068-7540c78feca5" x="0" y="0" width="70" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[วันที่ทำรายการ]]></text>
+							</element>
+							<box style="Table_CH">
+								<pen lineWidth="1.0" lineStyle="Solid"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#9CA3AF"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table_TD">
+							<element kind="textField" uuid="171a8166-9a71-40cd-afd4-4cb252f9dbfb" x="0" y="0" width="70" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+								<expression><![CDATA[$F{transactionDate}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#9CA3AF"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+					</column>
+					<column kind="single" uuid="fecf056e-9d30-41cc-9c52-3ee1c80a52b9" width="70">
+						<columnHeader height="20" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="041d0c5d-3dbc-4850-ace8-df26b46c30f2" x="0" y="0" width="70" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[วันที่บันทึก]]></text>
+							</element>
+							<box style="Table_CH">
+								<pen lineWidth="1.0" lineStyle="Solid"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#9CA3AF"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table_TD">
+							<element kind="textField" uuid="95581d9e-cf65-4023-a729-55deda44cf54" x="0" y="0" width="70" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+								<expression><![CDATA[$F{postingDate}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+					</column>
+					<column kind="single" uuid="7416e93a-6fa7-4849-ab7f-a6e13e7a6ddc" width="250">
+						<columnHeader height="20" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="fdf7dffb-a65d-4363-997a-a4fa6d4e5172" x="0" y="0" width="250" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[รายการ]]></text>
+							</element>
+							<box style="Table_CH">
+								<pen lineWidth="1.0" lineStyle="Solid"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#9CA3AF"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table_TD">
+							<element kind="textField" uuid="fd7e9c72-4758-4e7d-a37e-741fd3ff0649" x="0" y="0" width="250" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+								<paragraph leftIndent="10"/>
+								<expression><![CDATA[$F{description}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+					</column>
+					<column kind="single" uuid="3ad9293e-59c1-4c96-afa2-f92445fc9796" width="80">
+						<columnHeader height="20" rowSpan="1" style="Table_CH">
+							<element kind="staticText" uuid="e6eda9c6-9618-4403-a626-769735d3296c" x="0" y="0" width="80" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[จำนวนเงิน (บาท)]]></text>
+							</element>
+							<box style="Table_CH">
+								<pen lineWidth="1.0" lineStyle="Solid"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#9CA3AF"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table_TD">
+							<element kind="textField" uuid="4180e3c0-6b87-46f6-a963-b038517470c2" x="0" y="0" width="80" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Right" vTextAlign="Middle">
+								<paragraph rightIndent="5"/>
+								<expression><![CDATA[$F{amount}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+					</column>
+					<column kind="single" uuid="c2605664-a8c6-4533-91f2-2e5e6271f408" width="10">
+						<columnHeader height="20" rowSpan="1" style="Table_CH">
+							<box style="Table_CH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#9CA3AF"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table_TD">
+							<element kind="textField" uuid="af27e037-c4a5-48e5-8019-d5b1eddbd113" x="0" y="0" width="10" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Right" vTextAlign="Middle">
+								<paragraph rightIndent="2"/>
+								<expression><![CDATA[$F{note}]]></expression>
+							</element>
+							<box style="Table_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+					</column>
+				</component>
+				<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+				<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+				<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+			</element>
+		</band>
+		<band height="30">
+			<element kind="component" uuid="271210db-5303-4d2a-81ec-318af323bf0f" x="40" y="0" width="480" height="15">
+				<component kind="table">
+					<datasetRun uuid="446ae7a3-e4af-487b-85a6-fc66f8689660" subDataset="TablePreviousTransactionSummaryDataSet">
+						<dataSourceExpression><![CDATA[$P{TablePreviousTransactionSummary}]]></dataSourceExpression>
+					</datasetRun>
+					<column kind="single" uuid="ef96d8eb-769e-44d3-985b-159bc749ba7a" width="70">
+						<detailCell height="15" style="Table 3_TD">
+							<box style="Table 3_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#9CA3AF"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+					</column>
+					<column kind="single" uuid="a00acd00-d32d-40ba-86a3-3fe9b818c11e" width="70">
+						<detailCell height="15" style="Table 3_TD">
+							<box style="Table 3_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+					</column>
+					<column kind="single" uuid="4250c5c2-e3c7-4407-b8b8-12ae32228f1f" width="250">
+						<detailCell height="15" style="Table 3_TD">
+							<element kind="textField" uuid="93ec735b-a461-4e32-8722-2a800dc73adb" x="0" y="0" width="250" height="15" fontName="TH Sarabun New" fontSize="8.0" bold="true" vTextAlign="Middle">
+								<paragraph leftIndent="10" rightIndent="0"/>
+								<expression><![CDATA[$F{description}]]></expression>
+							</element>
+							<box style="Table 3_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+					</column>
+					<column kind="single" uuid="3eba5853-d25c-4542-9275-5aed0f1cdb44" width="80">
+						<detailCell height="15" style="Table 3_TD">
+							<element kind="textField" uuid="b27de085-ebe3-4f71-b5b6-e96143024f06" x="0" y="0" width="80" height="15" fontName="TH Sarabun New" fontSize="8.0" bold="false" hTextAlign="Right" vTextAlign="Middle">
+								<paragraph leftIndent="0" rightIndent="5"/>
+								<expression><![CDATA[$F{amount}]]></expression>
+								<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+							</element>
+							<box style="Table 3_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+					</column>
+					<column kind="single" uuid="a5356939-dfb9-46aa-a28a-e8bafc9097e3" width="10">
+						<detailCell height="15" style="Table 3_TD">
+							<element kind="textField" uuid="6253953c-8581-4960-9a47-b275b56c7e33" x="0" y="0" width="10" height="15" fontName="TH Sarabun New" fontSize="8.0" bold="false" hTextAlign="Right" vTextAlign="Middle">
+								<paragraph leftIndent="0" rightIndent="2"/>
+								<expression><![CDATA[$F{note}]]></expression>
+								<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+							</element>
+							<box style="Table 3_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+					</column>
+				</component>
+				<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				<property name="com.jaspersoft.studio.table.style.table_header" value="Table 3_TH"/>
+				<property name="com.jaspersoft.studio.table.style.column_header" value="Table 3_CH"/>
+				<property name="com.jaspersoft.studio.table.style.detail" value="Table 3_TD"/>
+			</element>
+		</band>
+		<band height="74">
+			<element kind="staticText" uuid="d9f29fbb-a7b4-414b-a696-213951709950" x="40" y="0" width="289" height="22" fontName="TH Sarabun New" fontSize="14.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[รายการเบิกถอนเงินสดและผ่อนชำระค่าสินค้าและบริการสำหรับรอบบิลนี้]]></text>
+			</element>
+			<element kind="component" uuid="6da70ebc-3196-4f3a-a618-1e8c0f9ec5cb" x="40" y="23" width="480" height="51">
+				<component kind="table">
+					<datasetRun uuid="05fcaefb-ce71-4bc4-a366-e7fd51cefb42" subDataset="TableCashAndLoanTransactionDataSet">
+						<dataSourceExpression><![CDATA[$P{TableCashAndLoanTransaction}]]></dataSourceExpression>
+					</datasetRun>
+					<column kind="single" uuid="4390141e-0cd7-4b57-9138-3b9d194a4613" width="50">
+						<tableHeader height="2" rowSpan="1" style="Table 1_TH">
+							<box style="Table 1_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 1_CH">
+							<element kind="staticText" uuid="29303db5-82d6-454a-8a23-1b82459bfba2" x="0" y="0" width="50" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[วันที่ทำรายการ]]></text>
+							</element>
+							<box style="Table 1_CH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 1_TD">
+							<element kind="textField" uuid="aee6c608-98dd-48d4-a39b-7e9251719269" x="0" y="0" width="50" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+								<expression><![CDATA[$F{transactionDate}]]></expression>
+							</element>
+							<box style="Table 1_TD">
+								<pen lineColor="#34BEF2"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+					</column>
+					<column kind="single" uuid="cd9dd2aa-4153-4a7e-86c2-20062c0b03a1" width="50">
+						<tableHeader height="2" rowSpan="1" style="Table 1_TH">
+							<box style="Table 1_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 1_CH">
+							<element kind="staticText" uuid="9ac79069-3d8f-461d-a63f-f5c7db492e99" x="0" y="0" width="50" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[วันที่บันทึก]]></text>
+							</element>
+							<box style="Table 1_CH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 1_TD">
+							<element kind="textField" uuid="b64507ef-676e-4e3a-9d54-7a58c02026ec" x="0" y="0" width="50" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+								<expression><![CDATA[$F{postingDate}]]></expression>
+							</element>
+							<box style="Table 1_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+					</column>
+					<column kind="single" uuid="1afb868d-ec33-42a8-bfb4-338f422c3ed5" width="250">
+						<tableHeader height="2" rowSpan="1" style="Table 1_TH">
+							<box style="Table 1_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 1_CH">
+							<element kind="staticText" uuid="dc0b507e-9de3-4f12-8e92-ba758e167e09" x="0" y="0" width="250" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[รายการ]]></text>
+							</element>
+							<box style="Table 1_CH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 1_TD">
+							<element kind="textField" uuid="6880289c-1b0d-43bf-bc47-b0698ff12d64" x="0" y="0" width="250" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+								<paragraph leftIndent="10"/>
+								<expression><![CDATA[$F{description}]]></expression>
+							</element>
+							<box style="Table 1_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+					</column>
+					<column kind="single" uuid="911380ec-1f09-422e-82b2-a754c5e21ea1" width="70">
+						<tableHeader height="2" rowSpan="1" style="Table 1_TH">
+							<box style="Table 1_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 1_CH">
+							<element kind="staticText" uuid="cdd5f929-dcc4-4d19-a86d-3f646b488f8a" x="0" y="0" width="70" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[เลขที่อ้างอิง]]></text>
+							</element>
+							<box style="Table 1_CH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 1_TD">
+							<element kind="textField" uuid="faae5256-608f-42c0-acbf-54fcf091dc50" x="0" y="0" width="70" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+								<expression><![CDATA[$F{refId}]]></expression>
+							</element>
+							<box style="Table 1_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+					</column>
+					<column kind="single" uuid="f5c7de5d-c45a-4369-80a2-cf016fa91401" width="60">
+						<tableHeader height="2" rowSpan="1" style="Table 1_TH">
+							<box style="Table 1_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 1_CH">
+							<element kind="staticText" uuid="0f7cacb1-1b65-40fb-b4c4-bcc240baf547" x="0" y="0" width="60" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[จำนวนเงิน (บาท)]]></text>
+							</element>
+							<box style="Table 1_CH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 1_TD">
+							<element kind="textField" uuid="fd9242aa-2c74-4f0a-b3b9-b4e3dad04408" x="0" y="0" width="60" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Right" vTextAlign="Middle">
+								<paragraph leftIndent="0" rightIndent="10"/>
+								<expression><![CDATA[$F{amount}]]></expression>
+							</element>
+							<box style="Table 1_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+					</column>
+				</component>
+				<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+				<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+				<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+			</element>
+		</band>
+		<band height="29">
+			<element kind="component" uuid="6322c1f2-9347-436e-9fe7-b5643f348ecb" x="40" y="0" width="480" height="15">
+				<component kind="table">
+					<datasetRun uuid="ef3616ec-ae81-4a9e-b64a-0bb459b08bbf" subDataset="TableCashAndLoanTransactionSummaryDataSet">
+						<dataSourceExpression><![CDATA[$P{TableCashAndLoanTransactionSummary}]]></dataSourceExpression>
+					</datasetRun>
+					<column kind="single" uuid="15fc4e5c-b5ec-41de-aafd-cbc60adf59ba" width="50">
+						<detailCell height="15" style="Table 4_TD">
+							<box style="Table 4_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+					</column>
+					<column kind="single" uuid="032c53c1-6445-48c1-b21b-7c3a8731d1d4" width="50">
+						<detailCell height="15" style="Table 4_TD">
+							<box style="Table 4_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+					</column>
+					<column kind="single" uuid="22f99040-beae-4e26-afcd-0e4f6404d87e" width="250">
+						<detailCell height="15" style="Table 4_TD">
+							<element kind="textField" uuid="80ac9b34-0d25-4d92-9ce6-f37eb424f900" x="0" y="0" width="250" height="15" fontName="TH Sarabun New" fontSize="8.0" bold="true" vTextAlign="Middle">
+								<paragraph leftIndent="10"/>
+								<expression><![CDATA[$F{description}]]></expression>
+							</element>
+							<box style="Table 4_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+					</column>
+					<column kind="single" uuid="f03cac9e-286f-4f9c-aa9c-4c34b5d57e9f" width="70">
+						<detailCell height="15" style="Table 4_TD">
+							<box style="Table 4_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+					</column>
+					<column kind="single" uuid="30ec892b-f357-4247-819e-e7bb2b362a5d" width="60">
+						<detailCell height="15" style="Table 4_TD">
+							<element kind="textField" uuid="fdb58b33-b082-41b1-9718-4a912e272a4e" x="0" y="0" width="60" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Right" vTextAlign="Middle">
+								<paragraph rightIndent="10"/>
+								<expression><![CDATA[$F{amount}]]></expression>
+							</element>
+							<box style="Table 4_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+					</column>
+				</component>
+				<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				<property name="com.jaspersoft.studio.table.style.table_header" value="Table 4_TH"/>
+				<property name="com.jaspersoft.studio.table.style.column_header" value="Table 4_CH"/>
+				<property name="com.jaspersoft.studio.table.style.detail" value="Table 4_TD"/>
+			</element>
+		</band>
+		<band height="60">
+			<element kind="staticText" uuid="b77dba75-c5ca-4e65-ad69-80b513bc1f67" x="40" y="0" width="289" height="22" fontName="TH Sarabun New" fontSize="14.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[รายละเอียดการผ่อนชำระรายเดือนและรายการเรียกเก็บเงินสำหรับรอบบิลนี้]]></text>
+			</element>
+			<element kind="component" uuid="5ebc7752-8337-444a-a416-993922b13544" x="40" y="23" width="480" height="37">
+				<component kind="table">
+					<datasetRun uuid="5a4b6b8a-3e2d-4b19-8a19-530547d93fed" subDataset="TableBillingTransactionDataSet">
+						<dataSourceExpression><![CDATA[$P{TableBillingTransaction}]]></dataSourceExpression>
+					</datasetRun>
+					<column kind="single" uuid="a566da6d-a799-4d89-ba67-6fc584905424" width="50">
+						<tableHeader height="2" rowSpan="1" style="Table 2_TH">
+							<box style="Table 2_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 2_CH">
+							<element kind="staticText" uuid="3c7dc080-48d1-4135-a3b9-b0a313a2dd16" x="0" y="0" width="50" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[วันที่ทำรายการ]]></text>
+							</element>
+							<box style="Table 2_CH">
+								<pen lineWidth="2.0"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 2_TD">
+							<element kind="textField" uuid="615a328e-8883-48e9-a3b5-8552cf15347f" x="0" y="0" width="50" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+								<expression><![CDATA[$F{transactionDate}]]></expression>
+							</element>
+							<box style="Table 2_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+					</column>
+					<column kind="single" uuid="fc6eb660-d1d3-4e77-971a-25e7131717a8" width="50">
+						<tableHeader height="2" rowSpan="1" style="Table 2_TH">
+							<box style="Table 2_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 2_CH">
+							<element kind="staticText" uuid="fdb64d20-23bc-412e-88e3-61905fa96875" x="0" y="0" width="50" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[วันที่บันทึก]]></text>
+							</element>
+							<box style="Table 2_CH">
+								<pen lineWidth="2.0"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 2_TD">
+							<element kind="textField" uuid="e8a6a2b2-cf8e-479f-9eba-2f54c3e2dfcd" x="0" y="0" width="50" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+								<expression><![CDATA[$F{postingDate}]]></expression>
+							</element>
+							<box style="Table 2_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+					</column>
+					<column kind="single" uuid="a68982ae-a1ee-4c6c-9531-be68b33fda9e" width="200">
+						<tableHeader height="2" rowSpan="1" style="Table 2_TH">
+							<box style="Table 2_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 2_CH">
+							<element kind="staticText" uuid="d57e13a4-0607-4b14-9ccc-4c2d498b6a98" x="0" y="0" width="200" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[รายการ]]></text>
+							</element>
+							<box style="Table 2_CH">
+								<pen lineWidth="2.0"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 2_TD">
+							<element kind="textField" uuid="ecbb0fd4-86f2-4ceb-b6ea-932d5f2f8fbd" x="0" y="0" width="200" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+								<paragraph leftIndent="10"/>
+								<expression><![CDATA[$F{description}]]></expression>
+							</element>
+							<box style="Table 2_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+					</column>
+					<column kind="single" uuid="07dc7b3f-32b0-4d0a-9f71-0acbdcb3a1fe" width="60">
+						<tableHeader height="2" rowSpan="1" style="Table 2_TH">
+							<box style="Table 2_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 2_CH">
+							<element kind="staticText" uuid="3e7bb0ac-babb-44d8-9f71-76563f9851dc" x="0" y="0" width="60" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[เลขที่อ้างอิง]]></text>
+							</element>
+							<box style="Table 2_CH">
+								<pen lineWidth="2.0"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 2_TD">
+							<element kind="textField" uuid="6d6f2030-7780-4f1d-8d41-0f5b603d6d4c" x="0" y="0" width="60" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+								<expression><![CDATA[$F{refId}]]></expression>
+							</element>
+							<box style="Table 2_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+					</column>
+					<column kind="single" uuid="a0e7d8da-398b-4b4a-889e-603444ab83f7" width="60">
+						<tableHeader height="2" rowSpan="1" style="Table 2_TH">
+							<box style="Table 2_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 2_CH">
+							<element kind="staticText" uuid="03305d57-025a-48c2-a205-18069038564e" x="0" y="0" width="60" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[งวดที่เรียกเก็บ]]></text>
+							</element>
+							<box style="Table 2_CH">
+								<pen lineWidth="2.0"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 2_TD">
+							<element kind="textField" uuid="95f1c681-7926-4eae-9ab9-7f23adad48ea" x="0" y="0" width="60" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+								<expression><![CDATA[$F{drawdownInstallmentBilled}]]></expression>
+							</element>
+							<box style="Table 2_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+					</column>
+					<column kind="single" uuid="9b25b33c-8767-407c-9689-4f0989df05b2" width="60">
+						<tableHeader height="2" rowSpan="1" style="Table 2_TH">
+							<box style="Table 2_TH">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#6B7280"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</tableHeader>
+						<columnHeader height="20" rowSpan="1" style="Table 2_CH">
+							<element kind="staticText" uuid="3cea22db-3ec2-4337-9b6a-80e4f099e483" x="0" y="0" width="60" height="20" fontName="TH Sarabun New" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+								<text><![CDATA[จำนวนเงิน (บาท)]]></text>
+							</element>
+							<box style="Table 2_CH">
+								<pen lineWidth="2.0"/>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</columnHeader>
+						<detailCell height="15" style="Table 2_TD">
+							<element kind="textField" uuid="4f90053f-52a8-4f7c-8949-e28ba9a45172" x="0" y="0" width="60" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Right" vTextAlign="Middle">
+								<paragraph rightIndent="10"/>
+								<expression><![CDATA[$F{amount}]]></expression>
+							</element>
+							<box style="Table 2_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+					</column>
+				</component>
+				<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
+				<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
+				<property name="com.jaspersoft.studio.table.style.detail" value="Table 2_TD"/>
+			</element>
+		</band>
+		<band height="31">
+			<element kind="component" uuid="6de3c186-e0a4-4d9a-a068-a1c8f7ff36cc" x="40" y="0" width="480" height="15">
+				<component kind="table">
+					<datasetRun uuid="239604ad-fd66-4a5e-ba6e-a27c31371d0c" subDataset="TableBillingTransactionSummaryDataSet">
+						<dataSourceExpression><![CDATA[$P{TableBillingTransactionSummary}]]></dataSourceExpression>
+					</datasetRun>
+					<column kind="single" uuid="772b607d-b4f6-427d-bafb-2432b0e49f61" width="50">
+						<detailCell height="15" style="Table 5_TD">
+							<box style="Table 5_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#34BEF2"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+					</column>
+					<column kind="single" uuid="5dcf0977-3d63-4560-aa67-a3e24ef2d4c1" width="50">
+						<detailCell height="15" style="Table 5_TD">
+							<box style="Table 5_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+					</column>
+					<column kind="single" uuid="3226ca40-8a8e-40ee-ae1f-1d3a6fdff152" width="200">
+						<detailCell height="15" style="Table 5_TD">
+							<element kind="textField" uuid="4a8d97dd-3a8d-4f85-aa0d-3fd7eae68f54" x="0" y="0" width="200" height="15" fontName="TH Sarabun New" fontSize="8.0" bold="true" vTextAlign="Middle">
+								<paragraph leftIndent="10"/>
+								<expression><![CDATA[$F{description}]]></expression>
+							</element>
+							<box style="Table 5_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+					</column>
+					<column kind="single" uuid="eda94aac-4059-4b7c-8c2c-14e42659ffea" width="60">
+						<detailCell height="15" style="Table 5_TD">
+							<box style="Table 5_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+					</column>
+					<column kind="single" uuid="b593a544-ec22-4be4-b04d-418eacd20a6e" width="60">
+						<detailCell height="15" style="Table 5_TD">
+							<box style="Table 5_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+					</column>
+					<column kind="single" uuid="9c5ca308-4101-4572-979e-f6004a7b7b29" width="60">
+						<detailCell height="15" style="Table 5_TD">
+							<element kind="textField" uuid="e2d5442d-45ab-4ed1-980e-4b5543fab873" x="0" y="0" width="60" height="15" fontName="TH Sarabun New" fontSize="8.0" hTextAlign="Right" vTextAlign="Middle">
+								<paragraph rightIndent="10"/>
+								<expression><![CDATA[$F{amount}]]></expression>
+							</element>
+							<box style="Table 5_TD">
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+						</detailCell>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+					</column>
+				</component>
+				<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				<property name="com.jaspersoft.studio.table.style.table_header" value="Table 5_TH"/>
+				<property name="com.jaspersoft.studio.table.style.column_header" value="Table 5_CH"/>
+				<property name="com.jaspersoft.studio.table.style.detail" value="Table 5_TD"/>
+			</element>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,308 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="receipt_template" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5b482d7c-ffef-456d-a480-a3c94274d449">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="receipt.jrdax"/>
+	<query language="json"><![CDATA[]]></query>
+	<field name="transactionDate" class="java.lang.String">
+		<description><![CDATA[transactionDate]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="transactionDate"/>
+	</field>
+	<field name="receiptNumber" class="java.lang.String">
+		<description><![CDATA[receiptNumber]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="receiptNumber"/>
+	</field>
+	<field name="fromAccountName" class="java.lang.String">
+		<description><![CDATA[fromAccountName]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="fromAccountName"/>
+	</field>
+	<field name="customerTaxId" class="java.lang.String">
+		<description><![CDATA[customerTaxId]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="customerTaxId"/>
+	</field>
+	<field name="customerAddress" class="java.lang.String">
+		<description><![CDATA[customerAddress]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="customerAddress"/>
+	</field>
+	<field name="customerEmail" class="java.lang.String">
+		<description><![CDATA[customerEmail]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="customerEmail"/>
+	</field>
+	<field name="locAccountNumber" class="java.lang.String">
+		<description><![CDATA[locAccountNumber]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="locAccountNumber"/>
+	</field>
+	<field name="paymentChannel" class="java.lang.String">
+		<description><![CDATA[paymentChannel]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="paymentChannel"/>
+	</field>
+	<field name="marketCode" class="java.lang.String">
+		<description><![CDATA[marketCode]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="marketCode"/>
+	</field>
+	<field name="productName" class="java.lang.String">
+		<description><![CDATA[productName]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="productName"/>
+	</field>
+	<field name="language" class="java.lang.String">
+		<description><![CDATA[language]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="language"/>
+	</field>
+	<field name="interestRate" class="java.math.BigDecimal">
+		<description><![CDATA[interestRate]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="interestRate"/>
+	</field>
+	<field name="outstandingPrincipal" class="java.math.BigDecimal">
+		<description><![CDATA[outstandingPrincipal]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="outstandingPrincipal"/>
+	</field>
+	<field name="outstandingInterest" class="java.math.BigDecimal">
+		<description><![CDATA[outstandingInterest]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="outstandingInterest"/>
+	</field>
+	<field name="outstandingPenaltyInterest" class="java.math.BigDecimal">
+		<description><![CDATA[outstandingPenaltyInterest]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="outstandingPenaltyInterest"/>
+	</field>
+	<field name="outstandingFee" class="java.math.BigDecimal">
+		<description><![CDATA[outstandingFee]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="outstandingFee"/>
+	</field>
+	<field name="repaidPrincipal" class="java.math.BigDecimal">
+		<description><![CDATA[repaidPrincipal]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="repaidPrincipal"/>
+	</field>
+	<field name="repaidInterest" class="java.math.BigDecimal">
+		<description><![CDATA[repaidInterest]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="repaidInterest"/>
+	</field>
+	<field name="repaidPenaltyInterest" class="java.math.BigDecimal">
+		<description><![CDATA[repaidPenaltyInterest]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="repaidPenaltyInterest"/>
+	</field>
+	<field name="repaidFee" class="java.math.BigDecimal">
+		<description><![CDATA[repaidFee]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="repaidFee"/>
+	</field>
+	<field name="totalRepaymentAmount" class="java.math.BigDecimal">
+		<description><![CDATA[totalRepaymentAmount]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="totalRepaymentAmount"/>
+	</field>
+	<field name="logo" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<pageHeader height="63">
+		<element kind="image" uuid="9aa2605d-d749-4cce-877c-4380c39ff23c" x="-20" y="0" width="269" height="63" hImageAlign="Center">
+			<expression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($F{logo}.getBytes()))]]></expression>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="b3353769-9687-4737-a7c7-6fad63981829" x="250" y="0" width="106" height="20" forecolor="#FF0C08" fontName="TH Sarabun New" fontSize="11.0" hTextAlign="Right" vTextAlign="Top">
+			<paragraph lineSpacing="1_1_2" lineSpacingSize="1.5"/>
+			<text><![CDATA[บบจ.ธนาคารกรุงเทพ สำนักงานใหญ่ ]]></text>
+			<property name="com.jaspersoft.studio.unit.firstLineIndent" value="pixel"/>
+		</element>
+		<element kind="textField" uuid="b38f5f53-d6ca-4864-8541-14cf790f0a55" x="358" y="0" width="194" height="40" fontName="TH Sarabun New" fontSize="11.0">
+			<paragraph lineSpacing="1_1_2"/>
+			<expression><![CDATA["35 ถนนสุขุมวิท แขวงคลองเตยเหนือ เขตวัฒนา กรุงเทพฯ 10110  เลขทะเบียนนิติบุคคล/เลขประจำตัวผู้เสียภาษี 0107537000882"]]></expression>
+		</element>
+	</pageHeader>
+	<columnHeader height="31"/>
+	<detail>
+		<band height="196" splitType="Stretch">
+			<element kind="staticText" uuid="53e8572e-f7e3-4d28-af61-5016ea6ac229" x="20" y="20" width="100" height="20" fontName="TH Sarabun New" fontSize="12.0" bold="true">
+				<text><![CDATA[ใบเสร็จรับเงินชำระหนี้]]></text>
+			</element>
+			<element kind="textField" uuid="d503651b-426c-47b1-8f45-c648779db815" x="280" y="0" width="130" height="20" fontName="TH Sarabun New" fontSize="11.0">
+				<expression><![CDATA["วันที่รับชำระ" +$F{transactionDate}]]></expression>
+			</element>
+			<element kind="textField" uuid="39028a32-3dac-41a2-9b19-46cb868641d5" x="20" y="52" width="100" height="18" fontName="TH Sarabun New" fontSize="11.0">
+				<expression><![CDATA[" เลขทีใ่บเสร็จรับเงิน"]]></expression>
+			</element>
+			<element kind="textField" uuid="eafe2b9e-0969-4938-a5a9-72a847808227" x="20" y="70" width="100" height="18" fontName="TH Sarabun New" fontSize="11.0">
+				<expression><![CDATA[" ได้รับเงินจาก"]]></expression>
+			</element>
+			<element kind="textField" uuid="eb9a3334-cd37-4136-a129-e2f9bf285c9b" x="20" y="88" width="520" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont">
+				<expression><![CDATA[" ที่อยู่ " + $F{customerAddress}]]></expression>
+			</element>
+			<element kind="textField" uuid="acd60fd8-44d7-40a8-8c0c-e474232ebcb5" x="20" y="106" width="520" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont">
+				<expression><![CDATA[" Email " +$F{customerEmail}]]></expression>
+			</element>
+			<element kind="textField" uuid="f6692210-35ef-48b1-9bd3-ecb3b9c7f1db" x="120" y="70" width="160" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont">
+				<expression><![CDATA[$F{fromAccountName}]]></expression>
+			</element>
+			<element kind="textField" uuid="47aede35-5be1-40a4-9092-cbb00ae7200e" x="120" y="52" width="160" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont">
+				<expression><![CDATA[$F{receiptNumber}]]></expression>
+			</element>
+			<element kind="textField" uuid="06b2a04f-2348-487b-8741-7ead06b91fab" x="20" y="140" width="520" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont">
+				<expression><![CDATA[" บัญชีเงินกู้เลขที่ " +$F{locAccountNumber}]]></expression>
+			</element>
+			<element kind="textField" uuid="f753a09f-6c48-42ab-aa34-0dc6eddb1e5c" x="20" y="158" width="520" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont">
+				<expression><![CDATA[" ชำระโดยการหักบัญชี/ช่องทาง/" +$F{paymentChannel}]]></expression>
+			</element>
+			<element kind="textField" uuid="ec79a931-014e-4d01-bf91-fc04f6f5772d" x="20" y="176" width="520" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont">
+				<expression><![CDATA[" ประเภทเงินกู้" +" [ "+$F{marketCode}+" ] " +"  "+$F{productName} + "  "]]></expression>
+			</element>
+			<element kind="textField" uuid="efb4b9e4-e2cd-4766-9ade-0b12a268b359" x="280" y="70" width="260" height="18" fontName="TH Sarabun New" fontSize="11.0">
+				<expression><![CDATA["เลขประจำตัวผู้เสียภาษี"+" "+ $F{customerTaxId}]]></expression>
+			</element>
+		</band>
+		<band height="238">
+			<element kind="staticText" uuid="dd640126-bfaa-49d1-bac8-c62a411f1811" x="20" y="30" width="140" height="20" fontName="TH Sarabun New" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[สรุปยอดคงเหลือหลังชำระ]]></text>
+				<box>
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="08d08470-23e0-453c-8b59-6eb55b6a06f2" x="160" y="30" width="90" height="20" fontName="TH Sarabun New" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[จำนวนเงิน]]></text>
+				<box>
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="499dd98d-0b56-4964-bdf1-c899d1126f11" x="250" y="30" width="140" height="20" fontName="TH Sarabun New" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[รายละเอียดการชำระเงินกู้]]></text>
+				<box>
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="dd29ee89-fc07-4fc4-b87e-588c1661297a" x="390" y="30" width="90" height="20" fontName="TH Sarabun New" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[จำนวนเงิน]]></text>
+				<box>
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="2e0c1239-a8ff-4f55-8925-3161c1f8ba74" x="20" y="50" width="140" height="20" fontName="TH Sarabun New" bold="false" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[จำนวนเงินต้น]]></text>
+				<box leftPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="a43cdc48-efb1-47f6-98d9-a7f3f43b51bc" x="20" y="70" width="140" height="20" fontName="TH Sarabun New" bold="false" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[ดอกเบี้ย]]></text>
+				<box leftPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="0ea29304-24f6-4820-8c23-97ee6d8aa415" x="20" y="90" width="140" height="20" fontName="TH Sarabun New" bold="false" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[ดอกเบี้ยผิดนัด]]></text>
+				<box leftPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="f3cd1dc7-e8d5-4e7b-afba-b0a65fc7009b" x="20" y="110" width="140" height="20" fontName="TH Sarabun New" bold="false" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[ค่าธรรมเนียม/เบี้ยปรับ]]></text>
+				<box leftPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="54712eee-2409-458c-92f6-bf3f5ed98334" x="250" y="50" width="140" height="20" fontName="TH Sarabun New" bold="false" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[จำนวนเงินต้น]]></text>
+				<box leftPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="24d2a403-d8a3-4f01-a651-fc6b41ec37f9" x="250" y="90" width="140" height="20" fontName="TH Sarabun New" bold="false" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[ดอกเบี้ยผิดนัด]]></text>
+				<box leftPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="d1fc0ab4-7926-485d-8553-d8ebe0032176" x="250" y="70" width="140" height="20" fontName="TH Sarabun New" bold="false" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[ดอกเบี้ย]]></text>
+				<box leftPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="2c7ed7df-b41d-47ce-95ab-eafb75cd76ca" x="250" y="110" width="140" height="20" fontName="TH Sarabun New" bold="false" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[ค่าธรรมเนียม/เบี้ยปรับ]]></text>
+				<box leftPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="af163e60-c2aa-425c-bab8-619dbdb0e321" x="250" y="130" width="140" height="20" fontName="TH Sarabun New" bold="false" hTextAlign="Right" vTextAlign="Middle">
+				<text><![CDATA[รวมจำนวนเงินที่ชำระ]]></text>
+				<box leftPadding="10" rightPadding="5">
+					<pen lineWidth="0.0"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="55c91e79-e313-47c1-aeb9-a08ccc6715f0" x="160" y="50" width="90" height="20" fontName="TH Sarabun New" fontSize="9.0" textAdjust="ScaleFont" pattern="#,##0.00" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{outstandingPrincipal}]]></expression>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="1c5807d4-84b1-4fae-8d5e-9e6ba84969bf" x="160" y="70" width="90" height="20" fontName="TH Sarabun New" fontSize="9.0" textAdjust="ScaleFont" pattern="#,##0.00" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{outstandingInterest}]]></expression>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="2fee48f6-7b77-46a4-aa16-b721d6d591c5" x="160" y="90" width="90" height="20" fontName="TH Sarabun New" fontSize="9.0" textAdjust="ScaleFont" pattern="#,##0.00" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{outstandingPenaltyInterest}]]></expression>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="ade5ba72-fb85-4f86-92bd-53087232bd6b" x="160" y="110" width="90" height="20" fontName="TH Sarabun New" fontSize="9.0" textAdjust="ScaleFont" pattern="#,##0.00" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{outstandingFee}]]></expression>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="56a323cc-1d7b-4929-be49-37ab6a749550" x="390" y="110" width="90" height="20" fontName="TH Sarabun New" fontSize="9.0" textAdjust="ScaleFont" pattern="#,##0.00" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{repaidFee}]]></expression>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="312389cc-371e-4d79-bf7f-52478bbc44e8" x="390" y="70" width="90" height="20" fontName="TH Sarabun New" fontSize="9.0" textAdjust="ScaleFont" pattern="#,##0.00" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{repaidInterest}]]></expression>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="b17fb377-58c7-43ed-a3d1-c08c90902756" x="390" y="90" width="90" height="20" fontName="TH Sarabun New" fontSize="9.0" textAdjust="ScaleFont" pattern="#,##0.00" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{repaidPenaltyInterest}]]></expression>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="bd7d1201-e85f-4248-9f97-f765f48b2d5e" x="390" y="50" width="90" height="20" fontName="TH Sarabun New" fontSize="9.0" textAdjust="ScaleFont" pattern="#,##0.00" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{repaidPrincipal}]]></expression>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="8a713ffc-42a6-45f0-8f3e-a6f0c70505ef" x="390" y="130" width="90" height="20" fontName="TH Sarabun New" fontSize="9.0" textAdjust="ScaleFont" pattern="#,##0.00" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{totalRepaymentAmount}]]></expression>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="e22389e5-f72f-4410-9516-ec6b818d275b" x="20" y="180" width="190" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont" pattern="#,##0.##'%'">
+				<expression><![CDATA["อัตราดอกเบี้ยที่ใช้คำนวณในใบเสร็จรับเงินชำระหนี้เงินกู้ (ร้อยละต่อปี): "]]></expression>
+			</element>
+			<element kind="textField" uuid="4fcd34e2-dbca-422c-961d-66529f7be7a4" x="20" y="210" width="520" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont">
+				<expression><![CDATA["(กรณีมีอัตราดอกเบี้ยมากกว่า 1 อัตรา ระบบจะแสดงดอกเบี้ยสูงสุดตามสัญญาสินชื่อของท่าน)"]]></expression>
+			</element>
+			<element kind="textField" uuid="b11a2c7e-18f4-4673-867f-e0084f96584f" x="210" y="180" width="85" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont" pattern="#,##0.##'%'">
+				<expression><![CDATA[$F{interestRate}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<summary height="139" splitType="Stretch">
+		<element kind="textField" uuid="2c08e837-cb99-4f0a-864c-c0de4ef1469c" x="20" y="40" width="273" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont">
+			<expression><![CDATA["เอกสารฉบับนี้ออกด้วยระบบอิเล็กทรอนิกส์จึงไม่มีการลงนาม"]]></expression>
+		</element>
+		<element kind="textField" uuid="6ed3d438-8da7-4677-996d-937352b5fe67" x="380" y="100" width="100" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont" hTextAlign="Right">
+			<expression><![CDATA["บบจ. ธนาคารกรุงไทย"]]></expression>
+		</element>
+		<element kind="textField" uuid="77b64fd4-b601-4f4d-b641-b01a1a359500" x="20" y="118" width="460" height="18" fontName="TH Sarabun New" fontSize="11.0" textAdjust="ScaleFont" hTextAlign="Right">
+			<expression><![CDATA["หากมีการเปลี่ยนแปลงใดๆ หรือมีข้อสงสัยประการใด โปรดแจ้งให้ธนาคารทราบ"]]></expression>
+		</element>
+	</summary>
+</jasperReport>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+
+	<fontFamily name="DejaVu Sans">
+		<normal><![CDATA[fonts/dejavu-sans.book.ttf]]></normal>
+		<bold><![CDATA[fonts/dejavu-sans.book.ttf]]></bold>
+		<italic><![CDATA[fonts/dejavu-sans.book.ttf]]></italic>
+		<regular><![CDATA[fonts/dejavu-sans.book.ttf]]></regular>
+		<boldItalic><![CDATA[fonts/dejavu-sans.book.ttf]]></boldItalic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="Thonburi">
+		<normal><![CDATA[fonts/SFThonburi-Regular.ttf]]></normal>
+		<bold><![CDATA[fonts/SFThonburi-Bold.ttf]]></bold>
+		<italic><![CDATA[fonts/SFThonburi-Regular.ttf]]></italic>
+		<regular><![CDATA[fonts/SFThonburi-Regular.ttf]]></regular>
+		<boldItalic><![CDATA[fonts/SFThonburi-Bold.ttf]]></boldItalic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="TH Sarabun New">
+		<normal><![CDATA[fonts/ThSarabun/THSarabunNew.ttf]]></normal>
+		<bold><![CDATA[fonts/ThSarabun/THSarabunNew Bold.ttf]]></bold>
+		<italic><![CDATA[fonts/ThSarabun/THSarabunNew Italic.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/ThSarabun/THSarabunNew BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="Sarabun">
+		<normal><![CDATA[fonts/Sarabun/Sarabun-Regular.ttf]]></normal>
+		<bold><![CDATA[fonts/Sarabun/Sarabun-Bold.ttf]]></bold>
+		<italic><![CDATA[fonts/Sarabun/Sarabun-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/Sarabun/Sarabun-BoldItalic.ttf]]></boldItalic>
+		<light><![CDATA[fonts/Sarabun/Sarabun-Light.ttf]]></light>
+		<lightItalic><![CDATA[fonts/Sarabun/Sarabun-LightItalic.ttf]]></lightItalic>
+		<medium><![CDATA[fonts/Sarabun/Sarabun-Medium.ttf]]></medium>
+		<mediumItalic><![CDATA[fonts/Sarabun/Sarabun-MediumItalic.ttf]]></mediumItalic>
+		<thin><![CDATA[fonts/Sarabun/Sarabun-Thin.ttf]]></thin>
+		<thinItalic><![CDATA[fonts/Sarabun/Sarabun-ThinItalic.ttf]]></thinItalic>
+		<semibold><![CDATA[fonts/Sarabun/Sarabun-SemiBold.ttf]]></semibold>
+		<semiboldItalic><![CDATA[fonts/Sarabun/Sarabun-SemiBoldItalic.ttf]]></semiboldItalic>
+		<extrabold><![CDATA[fonts/Sarabun/Sarabun-ExtraBold.ttf]]></extrabold>
+		<extraboldItalic><![CDATA[fonts/Sarabun/Sarabun-ExtraBoldItalic.ttf]]></extraboldItalic>
+		<extradark><![CDATA[fonts/Sarabun/Sarabun-ExtraLight.ttf]]></extradark>
+		<extradarkItalic><![CDATA[fonts/Sarabun/Sarabun-ExtraLightItalic.ttf]]></extradarkItalic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<exportFonts/>
+	</fontFamily>
+</fontFamilies>
