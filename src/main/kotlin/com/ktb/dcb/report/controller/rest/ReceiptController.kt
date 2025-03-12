@@ -2,7 +2,7 @@ package com.ktb.dcb.report.controller.rest
 
 import org.springframework.web.bind.annotation.*
 import com.ktb.dcb.report.service.GenerateReportService
-import com.ktb.dcb.report.model.request.ReceiptDetail
+import com.ktb.dcb.report.model.request.ReceiptReport
 import org.springframework.http.ResponseEntity
 
 @RestController
@@ -12,7 +12,7 @@ class ReceiptController(
 ) {
 
     @PostMapping("/receipt")
-    fun generateReport(@RequestBody req: ReceiptDetail): ResponseEntity<ByteArray> {
+    fun generateReport(@RequestBody req: ReceiptReport): ResponseEntity<ByteArray> {
         return generateReportService.exec(req)
     }
 
