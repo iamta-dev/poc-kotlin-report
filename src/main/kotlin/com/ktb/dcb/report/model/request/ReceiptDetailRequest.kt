@@ -2,7 +2,6 @@ package com.ktb.dcb.report.model.request
 
 import java.math.BigDecimal
 
-//unuse change to use model avro [ReceiptReport]
 class ReceiptReport(
 
         // 1) Transaction info
@@ -79,29 +78,3 @@ class ReceiptReport(
         val totalRepaymentAmount: BigDecimal,
         var logo: String? = null,
 )
-
-// class Receipt(
-//    val repaidTransactionDate: String,
-//    val recieptNo: String,
-//    val fromAccountName: String,
-//    val customerTaxId: String,
-//    val customerAddress: String,
-//    val customerEmail: String,
-//    val companyAddress: String,
-//    val companyTaxId: String,
-//    val locAccountNo: String,
-//    val paymentChannel: String,
-//    val marketCode: String,
-//    val productName: String,
-//    val interestRate: String,
-//    val outstandingPrincipleAmount: String,
-//    val outstandingInterestAmount: String,
-//    val outstandingPenaltyInterestAmount: String,
-//    val outstandingFeeAmount: String,
-//    val repaidPrincipleAmount: String,
-//    val repaidInterestAmount: String,
-//    val repaidPenaltyInterestAmount: String,
-//    val repaidFeeAmount: String,
-//    val repaidTotalAmount: String,
-//    val language: String? = "TH",
-// )
